@@ -1,0 +1,66 @@
+header
+    padding: 20px 0
+    .imgbox
+        width: 40px
+    nav
+        a
+            font-size: 20px
+            color: #8c8999
+            margin-right: 30px
+            cursor: pointer
+            &:hover
+                color: #47C7D8
+        .home-color
+            color: #74bebc
+            &:hover
+                color: #47C7D8
+    .btn
+        display: none
+        padding: 15px 20px
+        // width: 50px
+        // height: 50px
+        background-color: #dadadb
+        border: 1px solid #dadadb
+        border-radius: 7px
+    .cart
+        display: none
+        padding: 20px 20px
+        color: #ffff
+        background-color: #7ab9d0
+        border-radius: 7px
+        
+        h3
+            margin-right: 5px
+    @media (max-width: 992px)
+        padding: 40px 0
+        nav
+            display: none
+            justify-content: end
+        .btn
+            position: absolute
+            right: 20px
+            margin-right: 0
+            display: flex
+        .imgbox
+            position: absolute
+            left: 20px
+    @media (max-width: 768px)
+        .cart
+            display: flex
+            justify-content: end
+            position: absolute
+            right: 100px
+        .btn
+            margin-right: 0
+            display: flex
+            
+        nav
+            display: none
+    @media ( max-width: 432px )
+        .cart
+            position: absolute
+            right: 70px
+        .btn
+            position: absolute
+            right: 5px
+    
